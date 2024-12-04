@@ -65,8 +65,6 @@ add("1,-2,3,-4");
 
 <br/>
 <br/>
-<br/>
-<br/>
 
 # How to Run the Code
 
@@ -89,7 +87,7 @@ npm test
 ```
 Jest will run all tests, and you should see output indicating whether all tests have passed.
 
-## To manually add custom delimiter and number string:
+## Playground to manually add custom delimiter and number string as user input:
 
 ```bash
 npm start
