@@ -1,13 +1,12 @@
 function add(numbers) {
-    // Case 1: Handle empty string
+    // Handle empty string
     if (numbers === "") {
         return 0;
     }
     let delimiter = ",";
-    let customDelimiterPattern = /^\/\/(\S+)\n/;
+    let customDelimiterPattern = /^\/\/([^\s])\n/;
 
     const match = numbers.match(customDelimiterPattern);
-    console.log(numbers.startsWith("//"), match);
     // Check if custom delimiter is specified but no newline is given
     if (numbers.startsWith("//") && !match) {
         throw new Error("Invalid format: missing newline after delimiter");

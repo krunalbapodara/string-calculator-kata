@@ -87,5 +87,11 @@ npm install
 ```bash
 npm test
 ```
-
 Jest will run all tests, and you should see output indicating whether all tests have passed.
+
+## To manually add custom delimiter and number string:
+
+```bash
+npm start
+```
+Note: \n will not work as delimiter when taking input from user.
