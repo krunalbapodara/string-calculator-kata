@@ -33,8 +33,11 @@ function add(numbers) {
         throw new Error("negative numbers not allowed: " + negatives.join(", "));
     }
 
+    isStarDelimiter = delimiter === '*';
+    const checkDelimiterAndPerformOperation = (num1, num2) => (isStarDelimiter ? num1 * num2 : num1 + num2);
+
     // Sum
-    return numberArray.reduce((sum, num) => sum + parseInt(num, 10), 0);
+    return numberArray.reduce((sum, num) => checkDelimiterAndPerformOperation(sum, parseInt(num, 10)), isStarDelimiter ? 1 : 0);
 }
 
 module.exports = { add };

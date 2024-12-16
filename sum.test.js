@@ -20,6 +20,10 @@ test('Supports custom delimiters', () => {
     expect(add("//;\n1;2")).toBe(3);
 });
 
+test('Product of the numbers if * as custom delimiter', () => {
+    expect(add("//*\n1*2*2")).toBe(4);
+});
+
 test('Check if custom delimiter is specified but no newline is given', () => {
     try {
         add("//;1;2");

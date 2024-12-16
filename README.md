@@ -52,8 +52,16 @@ add("//;\n1;2");  // Returns: 3
 ```
 If \n is not given after custom delimiter, it will throw exception.
 
+### 6. **Custom Delimiters**
+If the custom delimiter is *, then instead of sum, it should do multiplication of the numbers.
 
-### 6. **Negative Numbers**
+**Example:**
+
+```javascript
+add("//*\n4*2");  // Returns: 8
+```
+
+### 7. **Negative Numbers**
 The function should throw an exception if any negative numbers are present in the input string. The exception should list all negative numbers found in the input.
 
 **Example:**
